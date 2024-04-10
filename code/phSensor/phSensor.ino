@@ -16,18 +16,20 @@ void loop() {
   // put your main code here, to run repeatedly:
 
   // read ph sensor
-  float pH_Value = pH.read_ph();
+  // float pH_Value = pH.read_ph();
 
   union {
     float f;
     unsigned char bytes[4];
   } convert;
 
-  convert.f = pH_Value;
+  // convert.f = pH_Value;
+
+  unsigned char testData[] = {0x12, 0x34, 0x56, 0x78};
 
   // send ph sensor data to LoRa board
   Wire.beginTransmission(7);
-  Wire.write(convert.bytes, 4);
+  Wire.write(testData, 4);
   Wire.endTransmission();
 
   // sleep? delay?
