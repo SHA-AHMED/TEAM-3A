@@ -1,4 +1,6 @@
-#include "ph_grav.h"
+#include <Wire.h>
+
+#include <ph_grav.h>
 Gravity_pH pH = Gravity_pH(A0);
 
 void setup() {
@@ -6,7 +8,7 @@ void setup() {
 
   // setup serial communication with LoRa transmitter board
   Serial.begin(9600); // serial communication with computer for debugging
-  Serial1.begin(9600); // serial communication with other board
+  Wire.begin();
 
 }
 
@@ -17,7 +19,9 @@ void loop() {
   float pH_Value = pH.read_ph();
 
   // send ph sensor data to LoRa board
-  Serial1.write(pH_Vale, 4);
+  Wire.beginTransmission(7);
+  Wire.write(pH_Value);
+  Wire.endTransmission();
 
   // sleep? delay?
   delay(1000);
