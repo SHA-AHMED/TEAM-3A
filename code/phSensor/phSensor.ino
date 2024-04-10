@@ -18,9 +18,16 @@ void loop() {
   // read ph sensor
   float pH_Value = pH.read_ph();
 
+  union {
+    float f;
+    unsigned char bytes[4];
+  } convert;
+
+  convert.f = pH_Value;
+
   // send ph sensor data to LoRa board
   Wire.beginTransmission(7);
-  Wire.write(pH_Value, 4);
+  Wire.write(convert.bytes, 4);
   Wire.endTransmission();
 
   // sleep? delay?
