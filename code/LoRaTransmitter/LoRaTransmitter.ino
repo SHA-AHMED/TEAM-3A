@@ -16,6 +16,8 @@ void loop() {
 void receiveData(int numBytes) {
   while(Wire.available()) {
 
+    // TODO: change back to float and order bytes correctly
+
     // float x;
     unsigned long y;
     unsigned char x1 = Wire.read();
@@ -28,6 +30,6 @@ void receiveData(int numBytes) {
     // memcpy(&x, &buff, sizeof(float));
     memcpy(&y, &buff, sizeof(unsigned long));
 
-    Serial.println(x);
+    Serial.println(y);
   }
 }

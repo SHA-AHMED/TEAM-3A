@@ -25,6 +25,7 @@ void loop() {
 
   // convert.f = pH_Value;
 
+  // TODO: send ph value float
   unsigned char testData[] = {0x12, 0x34, 0x56, 0x78};
 
   // send ph sensor data to LoRa board
