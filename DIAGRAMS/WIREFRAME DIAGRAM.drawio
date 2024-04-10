@@ -1,0 +1,31 @@
+<mxfile host="app.diagrams.net" modified="2024-04-10T15:44:49.082Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:124.0) Gecko/20100101 Firefox/124.0" etag="N58OhrL2GvFrld3-d9gA" version="24.2.3" type="device">
+  <diagram name="Page-1" id="qNUR6DpDOCy6S4uhiRNb">
+    <mxGraphModel dx="875" dy="443" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jyMq_5GXga4smwKC42Ej-38" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="120" width="400" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="jyMq_5GXga4smwKC42Ej-41" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=20;fontStyle=7" vertex="1" parent="1">
+          <mxGeometry x="270" y="130" width="180" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="jyMq_5GXga4smwKC42Ej-42" value="EXCEL" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=15;fontStyle=7" vertex="1" parent="1">
+          <mxGeometry x="460" y="130" width="170" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="jyMq_5GXga4smwKC42Ej-43" value="ARDUINO IDE" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=15;fontStyle=7" vertex="1" parent="1">
+          <mxGeometry x="270" y="130" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jyMq_5GXga4smwKC42Ej-44" value="DATE" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=15;fontStyle=7" vertex="1" parent="1">
+          <mxGeometry x="270" y="160" width="60" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="jyMq_5GXga4smwKC42Ej-45" value="TIME" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=15;fontStyle=7" vertex="1" parent="1">
+          <mxGeometry x="330" y="160" width="60" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="jyMq_5GXga4smwKC42Ej-46" value="RAW DATA" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=15;fontStyle=7" vertex="1" parent="1">
+          <mxGeometry x="390" y="160" width="60" height="200" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
