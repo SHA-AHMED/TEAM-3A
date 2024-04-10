@@ -20,7 +20,7 @@ void loop() {
 
   // send ph sensor data to LoRa board
   Wire.beginTransmission(7);
-  Wire.write(pH_Value);
+  Wire.write(pH_Value, 4);
   Wire.endTransmission();
 
   // sleep? delay?
