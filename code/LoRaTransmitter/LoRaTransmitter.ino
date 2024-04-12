@@ -18,19 +18,25 @@ void receiveData(int numBytes) {
 
     // TODO: change back to float and order bytes correctly
 
-    union {
-      float f;
-      unsigned char bytes[4];
-    } convert;
-
-    // float x;
-    convert.bytes[3] = Wire.read();
-    convert.bytes[2] = Wire.read();
-    convert.bytes[1] = Wire.read();
-    convert.bytes[0] = Wire.read();
+    float x;
+    unsigned char x3 = Wire.read();
+    unsigned char x2 = Wire.read();
+    unsigned char x1 = Wire.read();
+    unsigned char x0 = Wire.read();
+    unsigned char buff[] = {x3, x2, x1, x0};
 
     // memcpy(&x, &buff, sizeof(float));
+    memcpy(&x, &buff, sizeof(float));
 
-    Serial.println(convert.f);
+    Serial.println(x);
+    Serial.print(x3);
+    Serial.print(" ");
+    Serial.print(x2);
+    Serial.print(" ");
+    Serial.print(x1);
+    Serial.print(" ");
+    Serial.print(x0);
+    Serial.print(" ");
+    Serial.print("\n");
   }
 }
