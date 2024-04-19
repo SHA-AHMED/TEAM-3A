@@ -36,14 +36,14 @@ void receiveSensorData(int numBytes) {
     // Serial prints for testing
     memcpy(&x, &buff, sizeof(float));
     Serial.println(x);
-    Serial.print(x3);
-    Serial.print(" ");
-    Serial.print(x2);
-    Serial.print(" ");
-    Serial.print(x1);
-    Serial.print(" ");
-    Serial.print(x0);
-    Serial.print(" ");
-    Serial.print("\n");
+    //Serial.print(x3);
+   // Serial.print(" ");
+    //Serial.print(x2);
+    //Serial.print(" ");
+    //Serial.print(x1);
+    //Serial.print(" ");
+    //Serial.print(x0);
+   //Serial.print(" ");
+    //Serial.print("\n");
   }
 }
