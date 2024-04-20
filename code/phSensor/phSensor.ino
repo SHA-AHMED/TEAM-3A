@@ -28,12 +28,19 @@ void loop() {
   // convert float ph value to bytes
   convert.f = pH_Value;
 
+  // print pH value
+  Serial.print(0);
+  Serial.print(",");
+  Serial.print(pH_Value);
+  Serial.print(",");
+  Serial.println(14);
+
   // send ph sensor data to LoRa board
   Wire.beginTransmission(7);
   Wire.write(convert.bytes, 4);
   Wire.endTransmission();
 
   // sleep? delay?
-  delay(1000);
+  //delay(1000);
 
 }
